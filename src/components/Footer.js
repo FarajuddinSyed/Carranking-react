@@ -10,7 +10,7 @@ const Footer = () => {
         All images are the property of their respective owners.
         <br/>
         <br/>
-        Logo images from Carlogos.org
+        Logo images from Carlogos.org, Animated GIFs from LottieFiles.com
       </div>
     </div>
   );
