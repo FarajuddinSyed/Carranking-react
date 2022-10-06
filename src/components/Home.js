@@ -52,7 +52,7 @@ const Home = () => {
     setLoading(true);
     try {
       let url =
-        "https://raw.githubusercontent.com/SyedFarajuddin/Carrankings-react/main/src/luxuryvehicles.json";
+        "https://raw.githubusercontent.com/SyedFarajuddin/Carranking-react/main/src/luxuryvehicles.json";
       let response = await axios.get(url);
       setLoading(false);
       let myData = await response.data;

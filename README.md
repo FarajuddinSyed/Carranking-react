@@ -2,7 +2,7 @@
 
 ### Code Explanation
 
-You can view a live demo of my implementation by clicking [Car Rankings]() 
+You can view a live demo of my implementation by clicking [Car Rankings](https://carrankings-syedfarajuddin.netlify.app/) 
 
 The first thing that came to my mind when I thought of the designing a top 3 ranking site was, how would I want this site to look if I was a user because the main thing that a Web Developer creating websites and applications must know is to not just look from the perspective of the Business Logic but also try thinking from the perspective of a usual user to implement the design, UI, easy to use functionality and realistic expectations in such a way that would attract more users to the page and enhance traffic.
 
@@ -81,7 +81,7 @@ Lastly, the footer appears at the bottom of all 4 pages and is given the theme c
 
 So, I really hope that you really liked my explanation for this code as well as were able to view the code on this Github repository.
 
-You can view a live demo of my implementation by clicking [Car Rankings](/) 
+You can view a live demo of my implementation by clicking [Car Rankings](https://carrankings-syedfarajuddin.netlify.app/) 
 
 You can also view more of my projects on my [GitHub](https://github.com/SyedFarajuddin/) profile and on my Linked in with live demo links.
 [LinkedIn](https://www.linkedin.com/in/syedfarajuddin/)
