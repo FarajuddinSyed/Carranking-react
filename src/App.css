@@ -1,0 +1,569 @@
+/* .App {
+  text-align: center;
+} */
+/* html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+} */
+
+/* .App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+.App-link {
+  color: #61dafb;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+.snackbar {
+  width: 20rem;
+  margin-left: 0;
+  margin-right: 0;
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 1rem;
+  position: fixed;
+  z-index: 1;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  bottom: 4rem;
+}
+
+.loadingScreen {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loadingIcon {
+  width: 20rem;
+}
+
+.homeBody {
+  display: grid;
+  grid-template-columns: 70vw 30vw 1fr;
+  padding: 0.5rem;
+  row-gap: 1em;
+  animation: easeinout 2s;
+  transition: 0.3s;
+}
+
+.displayMenu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.holderBox {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: #ffffff;
+
+  height: auto;
+  margin-right: 2rem;
+  border-radius: 12px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.1rem;
+}
+.starAdded {
+  cursor: pointer;
+}
+.user-dot {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: #bbb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.user-dot:hover {
+  transition: 0.3s;
+  background: grey;
+}
+.user-dot:hover {
+  transition: 0.3s;
+  background: grey;
+}
+
+.dropdown-user {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 2rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 0;
+  z-index: 1;
+  transition: 0.3s;
+  top: 2.5rem;
+  margin-right: 2rem;
+  width: 6rem;
+}
+.dropdown-user li {
+  list-style: none;
+}
+.logout {
+  color: #dc143c;
+  margin-left: 0.8rem;
+
+  min-width: 1rem;
+}
+.dropdown-user ul {
+  margin-left: -0.4rem;
+  margin-right: 1rem;
+}
+.logged-message {
+  margin-left: 0.8rem;
+  text-transform: capitalize;
+}
+.user-dot .dropdown-user::after {
+  content: "";
+  position: absolute;
+  top: -14%;
+  left: 50%;
+  margin-left: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+  transform: rotate(180deg);
+}
+
+.dropdown-user .logout:hover {
+  color: #ff2d57;
+}
+.user-dot:hover .dropdown-user {
+  display: block;
+  transition: 0.3s;
+}
+
+.displaySelectedRanks {
+  position: relative;
+  height: 40vw;
+}
+.displaySelect {
+  transform: translate(-2%);
+}
+.car-card-selected {
+  margin-left: auto;
+  margin-right: auto;
+  width: 22vw;
+  height: auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  position: relative;
+}
+
+.car-image-selected {
+  width: 6vw;
+  height: 5vw;
+}
+
+.selected-heading-car {
+  display: flex;
+  font-size: 1.5rem;
+  font-family: sans-serif, Arial, Helvetica;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 0.1rem;
+}
+.rankStar {
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+  padding-right: 0.5rem;
+}
+.tab {
+  margin-top: 1rem;
+  display: none;
+}
+.car-tab {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  padding-left: 3rem;
+  padding-right: 4rem;
+  border-right: 1px solid #808080;
+  color: #808080;
+  font-weight: 500;
+}
+.car-tab-active {
+  color: #000000;
+}
+.tab2 {
+  border: none;
+}
+.display-mobile {
+  display: none;
+}
+.displayNoCar {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50%;
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  align-items: center;
+}
+.Nocar-text {
+  color: gray;
+}
+.displayNotFound {
+  width: 15vw;
+}
+
+.selectionTabImage {
+  width: 15vw;
+
+}
+
+.selected-rating {
+  display: block;
+  font-size: 1rem;
+
+  font-family: sans-serif, Arial, Helvetica;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 0.1rem;
+}
+
+.car-selected {
+  padding-left: 1rem;
+  display: flex;
+  padding-right: 1rem;
+  flex-direction: column;
+  width: 50%;
+}
+
+.badge-selected {
+  margin-left: auto;
+}
+
+.badgeDisplay {
+  width: 4vw;
+}
+.rankDisplay {
+  margin-left: 8px;
+}
+
+.removedbtn {
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.selectionDisplayTab {
+  display: block;
+  font-size: 1.5rem;
+
+  font-family: sans-serif, Arial, Helvetica;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-top: 1rem;
+}
+
+.selectionDisplayTab-empty {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  align-items: center;
+}
+.showpoll-ribbon {
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  margin: -1.5em;
+  margin-top: 1rem;
+  text-align: center;
+}
+.showpoll-text {
+  display: inline-block;
+  padding: 0.5em 1em;
+  min-width: 25vw;
+  line-height: 1.2em;
+  background: #5f9ea0;
+  position: relative;
+  color: #ffffff;
+}
+.showpoll-ribbon:after,
+.showpoll-ribbon:before,
+.showpoll-text:before,
+.showpoll-text:after,
+.bold:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+}
+.showpoll-ribbon:before {
+  top: 0.3em;
+  left: 0.2em;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #ebeced;
+  z-index: -2;
+}
+.showpoll-text:before {
+  bottom: 100%;
+  left: 0;
+  border-width: 0.5em 0.7em 0 0;
+  border-color: transparent #4f8789 transparent transparent;
+}
+.showpoll-text:after {
+  top: 100%;
+  right: 0;
+  border-width: 0.5em 2em 0 0;
+  border-color: transparent transparent transparent;
+}
+.ribbon-mobile {
+  display: none;
+}
+.showpoll-ribbon:after,
+.bold:before {
+  border-color: transparent;
+  z-index: -1;
+}
+.bold:before {
+  border-color: #ebeced transparent #ebeced #ebeced;
+  top: 0.7em;
+  right: -2.3em;
+}
+
+.search-car {
+  height: 0rem;
+  width: 20vw;
+  padding-right: 12px;
+  background: transparent url("./assets/search-green.svg") no-repeat 13px center;
+  background-position: right;
+  background-origin: content-box;
+  border: 1px solid #5f9ea0;
+}
+.search-car:focus {
+  border: 1px solid #8ad2d3;
+}
+.search-header {
+  margin: auto;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  .centered {
+    margin-right: 0;
+  }
+  .displaySelectedRanks {
+    position: relative;
+    height: 55vw;
+  }
+  .rankDisplay {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .pc-display {
+    display: block;
+  }
+  .display-mobile {
+    display: none !important;
+  }
+
+  .centered {
+    margin-right: 0;
+  }
+  .displaySelectedRanks {
+    height: 74vw;
+  }
+  .homeBody {
+    grid-template-columns: 62vw 40vw 1fr;
+  }
+  .selectionDisplayTab {
+    margin-left: 2rem;
+  }
+
+  .displayMenu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .car-card-selected {
+    width: 30vw;
+  }
+  .rankDisplay {
+    margin-left: 0;
+  }
+  .holderBox {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-left: 0;
+  }
+  .showpoll-text {
+    min-width: 25vw;
+  }
+  .showpoll-ribbon {
+    margin: -0.8em;
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .selectionDisplayTab-empty {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .displayNoCar {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .selectionDisplayTab {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .car-card-selected {
+    width: 71vw;
+  }
+  .pc-display {
+    display: none;
+  }
+  .display-mobile {
+    display: block;
+  }
+  .tab {
+    display: flex;
+  }
+  .displayNocar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+    margin-bottom: 50%;
+  }
+  .displayNotFound {
+    width: 30vw;
+  }
+  .selectionTabImage {
+    width: 35vw;
+  }
+  .ribbon-mobile {
+    display: block;
+    position: fixed;
+    bottom: 12%;
+    margin-bottom: rem;
+    z-index: 100;
+  }
+  .ribbon-mobile-text {
+    min-width: 80vw;
+  }
+  .displaySelectedRanks {
+    display: none;
+  }
+
+  .homeBody {
+    grid-template-columns: 100vw 1fr;
+  }
+  .snackbar {
+    width: 70vw;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 587px) {
+  .centered {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .rankStar {
+    width: 3.5rem;
+  }
+
+  .btn-head {
+    min-width: 4rem;
+  }
+}
+@media screen and (max-width: 362px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+  .rankStar {
+    width: 3rem;
+  }
+
+  .btn-head {
+    min-width: 2rem;
+  }
+}

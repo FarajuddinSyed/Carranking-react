@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "carName": "Bentley",
+    "description": "Bentley Motors Limited is a British designer, manufacturer and marketer of luxury cars and SUVs.",
+    "image": "https://www.carlogos.org/car-logos/bentley-logo.png"
+  },
+  {
+    "id": 2,
+    "carName": "Rolls Royce",
+    "description": "Rolls-Royce Motor Cars Limited is a British luxury automobile maker which is the exclusive manufacturer of Rolls-Royce-branded motor cars.",
+    "image": "https://www.carlogos.org/car-logos/rolls-royce-logo.png"
+  },
+  {
+    "id": 3,
+    "carName": "Maybach",
+    "description": "Maybach is a German luxury car brand that exists today as a part of Mercedes-Benz.",
+    "image": "https://www.carlogos.org/car-logos/maybach-logo.png"
+  },
+  {
+    "id": 4,
+    "carName": "Lagonda",
+    "description": "Lagonda is a British luxury car brand established in 1906, which has been owned by Aston Martin since 1947.",
+    "image": "https://www.carlogos.org/car-logos/lagonda-logo.png"
+  },
+  {
+    "id": 5,
+    "carName": "Bugatti",
+    "description": "Bugatti Automobiles S.A.S is a French luxury automobile manufacturer and luxury brand for hyper sports cars. ",
+    "image": "https://www.carlogos.org/car-logos/bugatti-logo.png"
+  },
+  {
+    "id": 6,
+    "carName": "Koenigsegg",
+    "description": "Koenigsegg Automotive AB is a Swedish manufacturer of high-performance sports cars based in Ängelholm, Skåne County, Sweden.",
+    "image": "https://www.carlogos.org/car-logos/koenigsegg-logo.png"
+  },
+  {
+    "id": 7,
+    "carName": "SSC North America",
+    "description": "SSC North America is an American automobile manufacturer founded in 1999 by owner Jerod Shelby and specializes in the production of sports cars.",
+    "image": "https://www.carlogos.org/car-logos/ssc-logo.png"
+  },
+  {
+    "id": 8,
+    "carName": "Porsche",
+    "description": "Porsche, is a German automobile manufacturer specializing in high-performance sports cars, SUVs and sedans.",
+    "image": "https://www.carlogos.org/car-logos/porsche-logo.png"
+  },
+  {
+    "id": 9,
+    "carName": "Ferrari",
+    "description": "Ferrari S.p.A. is an Italian luxury sports car manufacturer based in Maranello, Italy.",
+    "image": "https://www.carlogos.org/car-logos/ferrari-logo.png"
+  },
+  {
+    "id": 10,
+    "carName": "Maserati",
+    "description": "Maserati S.p.A. is an Italian luxury vehicle manufacturer. Established on 1 December 1914, in Bologna, Italy.",
+    "image": "https://www.carlogos.org/car-logos/maserati-logo.png"
+  },
+  {
+    "id": 11,
+    "carName": "Aston Martin",
+    "description": "Aston Martin Lagonda Global Holdings PLC is an English manufacturer of luxury sports cars and grand tourers.",
+    "image": "https://www.carlogos.org/car-logos/aston-martin-logo.png"
+  },
+  {
+    "id": 12,
+    "carName": "Alfa Romeo",
+    "description": "Alfa Romeo Automobiles S.p.A. is an Italian luxury car manufacturer and a subsidiary of Stellantis.",
+    "image": "https://www.carlogos.org/car-logos/alfa-romeo-logo.png"
+  },
+  {
+    "id": 13,
+    "carName": "Lamborghini",
+    "description": "Lamborghini S.p.A. is an Italian brand and manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese.",
+    "image": "https://www.carlogos.org/car-logos/lamborghini-logo.png"
+  },
+  {
+    "id": 14,
+    "carName": "McLaren",
+    "description": "McLaren Automotive is a British luxury automotive manufacturer based at the McLaren Technology Centre in Woking, England.",
+    "image": "https://www.carlogos.org/car-logos/mclaren-logo.png"
+  },
+  {
+    "id": 15,
+    "carName": "Mercedes-Benz",
+    "description": "Mercedes-Benz, commonly referred to as Mercedes and sometimes as Benz, is a German luxury and commercial vehicle automotive brand.",
+    "image": "https://www.carlogos.org/car-logos/mercedes-benz-logo.png"
+  },
+  {
+    "id": 16,
+    "carName": "BMW",
+    "description": "Bayerische Motoren Werke AG, abbreviated as BMW, is a German multinational manufacturer of performance luxury vehicles and motorcycles.",
+    "image": "https://www.carlogos.org/car-logos/bmw-logo.png"
+  },
+  {
+    "id": 17,
+    "carName": "Cadillac",
+    "description": "The Cadillac Motor Car Division is a division of the American automobile manufacturer General Motors that designs and builds luxury vehicles.",
+    "image": "https://www.carlogos.org/car-logos/cadillac-logo.png"
+  },
+  {
+    "id": 18,
+    "carName": "Lexus",
+    "description": "Lexus is the luxury vehicle division of the Japanese automaker Toyota. Lexus is Japan's largest-selling make of premium cars.",
+    "image": "https://www.carlogos.org/car-logos/lexus-logo.png"
+  },
+  {
+    "id": 19,
+    "carName": "Audi",
+    "description": "Audi AG Aktiengesellschaft, commonly referred to as Audi, is a German automotive manufacturer of luxury vehicles headquartered in Ingolstadt, Bavaria.",
+    "image": "https://www.carlogos.org/car-logos/audi-logo.png"
+  },
+  {
+    "id": 20,
+    "carName": "Volvo",
+    "description": "Volvo Cars is a Swedish multinational manufacturer of luxury vehicles headquartered in Torslanda, Gothenburg.",
+    "image": "https://www.carlogos.org/car-logos/volvo-logo.png"
+  },
+  {
+    "id": 21,
+    "carName": "Jaguar",
+    "description": "Jaguar is the luxury vehicle brand of Jaguar Land Rover, a British multinational car manufacturer with its headquarters in Whitley, Coventry, England.",
+    "image": "https://www.carlogos.org/car-logos/jaguar-logo.png"
+  },
+  {
+    "id": 22,
+    "carName": "Lincoln",
+    "description": "Lincoln Motor Company, or simply Lincoln, is the luxury vehicle division of American automobile manufacturer Ford.",
+    "image": "https://www.carlogos.org/car-logos/lincoln-logo.png"
+  },
+  {
+    "id": 23,
+    "carName": "Land Rover",
+    "description": "Land Rover is a British brand of predominantly four-wheel drive, off-road capable vehicles, owned by multinational car manufacturer Jaguar Land Rover.",
+    "image": "https://www.carlogos.org/car-logos/land-rover-logo.png"
+  },
+  {
+    "id": 24,
+    "carName": "Tesla",
+    "description": "Tesla, Inc. is an American multinational automotive electric vehicle brand.",
+    "image": "https://www.carlogos.org/car-logos/tesla-logo.png"
+  },
+  {
+    "id": 25,
+    "carName": "Chrysler",
+    "description": "Stellantis North America is one of the Big Three automobile manufacturers in the United States, headquartered in Auburn Hills, Michigan.",
+    "image": "https://www.carlogos.org/car-logos/chrysler-logo.png"
+  },
+  {
+    "id": 26,
+    "carName": "Pontiac",
+    "description": "Pontiac or formally the Pontiac Motor Division of General Motors, was an American automobile brand owned, manufactured, and commercialized by General Motors.",
+    "image": "https://www.carlogos.org/car-logos/pontiac-logo.png"
+  },
+  {
+    "id": 27,
+    "carName": "Infiniti",
+    "description": "Infiniti is the luxury vehicle division of the Japanese automaker Nissan.",
+    "image": "https://www.carlogos.org/car-logos/infiniti-logo.png"
+  },
+  {
+    "id": 28,
+    "carName": "Mini",
+    "description": "Mini is a British automotive marque founded in 1969, owned by German automotive company BMW since 2000, and used by them for a range of small cars.",
+    "image": "https://www.carlogos.org/car-logos/mini-logo.png"
+  },
+  {
+    "id": 29,
+    "carName": "Genesis",
+    "description": "Genesis Motor, LLC, commonly referred to as Genesis, is the luxury vehicle division of the South Korean vehicle manufacturer Hyundai Motor Company.",
+    "image": "https://www.carlogos.org/car-logos/genesis-logo.png"
+  },
+  {
+    "id": 30,
+    "carName": "Ford",
+    "description": "Ford Motor Company is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States.",
+    "image": "https://www.carlogos.org/car-logos/ford-logo.png"
+  }
+]

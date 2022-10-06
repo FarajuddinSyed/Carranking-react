@@ -1,0 +1,149 @@
+.header {
+  background-color: #ffffff;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  animation: easeinout 2s;
+  transition: 0.3s;
+}
+.home-link {
+  text-decoration: none;
+}
+
+.header-items {
+  padding-top: 0;
+  padding: 0.5rem;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5f9ea0;
+  font-family: "Pacifico", cursive, sans-serif, Arial, Helvetica;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+@font-face {
+  font-family: "Pacifico", cursive;
+
+  src: url("../fonts/Pacifico-Regular.ttf");
+}
+
+.login-button {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  padding: 0 16px;
+  min-width: 6rem;
+  height: 2.5rem;
+  vertical-align: middle;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #5f9ea0;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 36px;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.login-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #5f9ea0;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.login-button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  padding: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 1s, transform 0.5s;
+}
+
+.login-button:hover,
+.login-button:focus {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.login-button:hover::before {
+  opacity: 0.08;
+}
+
+.login-button:focus::before {
+  opacity: 0.24;
+}
+
+.login-button:hover:focus::before {
+  opacity: 0.3;
+}
+
+.-login-button:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.login-button:active::after {
+  opacity: 0.32;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0s;
+}
+
+.search-header-mobile {
+  display: none;
+}
+@media screen and (max-width: 539px) {
+  .header-items {
+    padding-top: 0;
+    justify-content: space-between;
+  }
+  .search-header {
+    display: none;
+  }
+
+  .search-header-mobile {
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-header-mobile input {
+    width: 64vw;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
